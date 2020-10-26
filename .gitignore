@@ -123,3 +123,6 @@ dmypy.json
 
 # Pyre type checker
 .pyre/
+cursoemvideo-projeto/desafios/__init__.py
+cursoemvideo-projeto/pythonteste/__init__.py
+cursoemvideo-projeto/exercicios/__init__.py

@@ -1,0 +1,12 @@
+num = int(input("Digite um numero inteiro: "))
+
+print("{0}x1 = {1}".format(num, num*1))
+print("{0}x2 = {1}".format(num, num*2))
+print("{0}x3 = {1}".format(num, num*3))
+print("{0}x4 = {1}".format(num, num*4))
+print("{0}x5 = {1}".format(num, num*5))
+print("{0}x6 = {1}".format(num, num*6))
+print("{0}x7 = {1}".format(num, num*7))
+print("{0}x8 = {1}".format(num, num*8))
+print("{0}x9 = {1}".format(num, num*9))
+print("{0}x10 = {1}".format(num, num*10))
