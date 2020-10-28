@@ -126,3 +126,7 @@ dmypy.json
 cursoemvideo-projeto/desafios/__init__.py
 cursoemvideo-projeto/pythonteste/__init__.py
 cursoemvideo-projeto/exercicios/__init__.py
+.idea/cursoemvideo-python.iml
+.idea/inspectionProfiles/profiles_settings.xml
+.idea/inspectionProfiles/Project_Default.xml
+.idea/modules.xml
