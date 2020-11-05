@@ -22,7 +22,7 @@ if(jogador == 1 and computador == 2):
     jogador_escolha = "PAPEL"
     computador_escolha = "TESOURA"
     ganhador = "COMPUTADOR"
-if(jogador == 3 and computador == 2):
+elif(jogador == 3 and computador == 2):
     jogador_escolha = "PEDRA"
     computador_escolha = "TESOURA"
     ganhador = nome
@@ -91,8 +91,11 @@ elif(jogador == 3 == computador):
     jogador_escolha = "PEDRA"
     computador_escolha = "PEDRA"
 else:
-    ganhador = nome
+    print("\033[1;31mOpcao invalida! Tente novamente!\033[m")
+    ganhador = "NINGUEM"
+    jogador_escolha = "ERRO"
+    computador_escolha = "ERRO"
 
-print(computador)
-print("|{0}| = [ {1} ] <+[=====] vs [=====]+> |{2}| = [ {3} ]".format("COMPUTADOR", computador_escolha, nome, jogador_escolha))
-print("O GANHADOR FOI O {0}!".format(ganhador))
+#print(computador)
+print("\033[1;32m|{0}|\033[m = \033[1;31m[ {1} ]\033[m <+[=====] \033[1;30mVS\033[m [=====]+> \033[1;32m|{2}|\033[m = \033[1;31m[ {3} ]\033[m".format("COMPUTADOR", computador_escolha, nome, jogador_escolha))
+print("O \033[1;34mGANHADOR\033[m FOI O \033[1;36m{0}\033[m!".format(ganhador))
