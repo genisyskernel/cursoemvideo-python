@@ -8,7 +8,7 @@ if r1 < r2 + r3 and r2 < r1 + r3 and r3 < r1 + r2:
 
     if (r2 == r1 == r3):
         tipo = "EQUILATERO"
-    elif (r2 != r1 != r3):
+    elif (r2 != r1 != r3 != r1):
         tipo = "ESCALENO"
     else:
         tipo = "ISOSCELES"
