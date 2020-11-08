@@ -1,3 +1,6 @@
-primeiro_termo = int(input("Informe o primei"))
+primeiro_termo = int(input("Informe o primeiro termo: "))
 
-for c in range(1, 11):
+razao = int(input("Informe a razao da P.A: "))
+
+for c in range(primeiro_termo, 11, razao):
+    print(c)
