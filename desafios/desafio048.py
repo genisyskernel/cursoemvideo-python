@@ -1,4 +1,9 @@
-print("Multiplos de 3 de 1 - 500")
-for c in range(0, 501):
+cont_impares = 0
+soma = 0
+
+for c in range(1, 501, 2):
     if(c % 3 == 0):
-        print(c)
+        cont_impares += 1
+        soma += c
+
+print("A soma de todos os {0} valores solicitados e {1}".format(cont_impares, soma))
