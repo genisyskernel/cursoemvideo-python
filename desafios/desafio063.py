@@ -1,14 +1,20 @@
-numero = int(input("Informe um numero inteiro: "))
+Fn = int(input("Informe um numero inteiro: "))
 
-cont = 1
+cont = 0
 fibonacci = 0
 termo_anterior = 0
+termo_posterior = 0
 
-while cont < numero:
-    print("{0}".format(fibonacci), end=" -> ")
+while cont < Fn:
 
-    termo_anterior = cont - 1
-    fibonacci = cont + termo_anterior
+    termo_anterior += cont
+
     cont += 1
+
+    termo_posterior += cont
+
+    fibonacci = termo_posterior - termo_anterior
+
+    print("{0}".format(fibonacci), end=" -> ")
 
 print("FIM")
