@@ -2,7 +2,7 @@ termo = int(input("Informe o primeiro termo: "))
 
 razao = int(input("Informe a razao: "))
 
-tot = 1
+tot = termo
 cont = 1
 termo_final = 1
 
@@ -17,6 +17,6 @@ while termo_final != 0:
     else:
         cont += 1
         print("{0} -> ".format(tot), end="")
-        tot += (termo + razao) - 1
+        tot += razao
 
 print("ACABOU")
