@@ -14,5 +14,7 @@ while acertou == False:
         acertou = True
         print("\033[1;32mParabens! Voce acertou o numero sorteado, que foi {0}!\033[m".format(computador))
         print("\033[1;34mVoce tentou {0} vezes para acertar o numero!\033[m".format(cont_tentativas))
-    else:
-        print("\033[1;31mHMMM! Quase acertou! Tente novamente...\033[m")
+    elif(jogador < computador):
+        print("\033[1;31mMAIS! Quase acertou! Tente novamente...\033[m")
+    elif(jogador > computador):
+        print("\033[1;31mMENOS! Quase acertou! Tente novamente...\033[m")
