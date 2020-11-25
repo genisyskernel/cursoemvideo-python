@@ -13,7 +13,7 @@ while(sair == False):
 
     soma += numero
 
-    opcao = str(input("Deseja continuar? [S/N]: ")).strip().upper()
+    opcao = str(input("Deseja continuar? [S/N]: ")).strip().upper()[0]
 
     if(opcao == "S"):
         sair = False
