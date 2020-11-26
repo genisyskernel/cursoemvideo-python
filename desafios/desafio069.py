@@ -6,16 +6,13 @@ while continuar != "N":
     print("      CADASTRO DE PESSOA      ")
     print("*-*"*10)
 
-    idade = int(input("IDADE: "))
+    while idade <= 0 or idade > 120:
+        idade = int(input("IDADE: "))
 
-    sexo = str(input("SEXO [ M/F ]: ")).strip().upper()[0]
+    while sexo != "F" and sexo != "M":
+        sexo = str(input("SEXO [ M/F ]: ")).strip().upper()[0]
 
     print("=-="*10)
-
-    continuar = str(input("Deseja continuar [ S/N ]? ")).strip().upper()[0]
-
-    if continuar == "N":
-        break
 
     if idade > 18:
         mais_18 += 1
@@ -24,6 +21,16 @@ while continuar != "N":
         homens += 1
     elif idade > 20:
         mulheres_20 += 1
+
+    while continuar != "S" and continuar != "N":
+        continuar = str(input("Deseja continuar [ S/N ]? ")).strip().upper()[0]
+
+    if continuar == "N":
+        break
+    else:
+        sexo = ""
+        continuar = ""
+        idade = 0
 
 print(f"Tem {mais_18} pessoas maiores de 18 anos!")
 print(f"E tambem {homens} homens cadastrados.")
