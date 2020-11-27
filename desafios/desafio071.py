@@ -1,3 +1,5 @@
+qtd_cedula50 = qtd_cedula20 = qtd_cedula10 = qtd_cedula01 = total = 0
+
 while True:
     print("_="*10)
     print("{0:10}".format("BANCO CURSO EM VIDEO"))
@@ -5,19 +7,33 @@ while True:
 
     valor = int(input("Informe o valor para sacar R$? "))
 
-    qtd_cendula50 = (valor / 50)
-    qtd_cendula20 = (qtd_cendula50 / 20)
-    qtd_cendula10 = (qtd_cendula20 / 10)
-    qtd_cendula01 = (valor / 1)
+    total = valor
 
-    print(f"Total de {qtd_cendula50} cedulas de R$: 50,00 reais!")
+    while total / 50 >= 1:
+        qtd_cedula50 += 1
+        total -= 50
 
-    print(f"Total de {qtd_cendula20} cedulas de R$: 20,00 reais!")
+    while total / 20 >= 1:
+        qtd_cedula20 += 1
+        total -= 20
 
-    print(f"Total de {qtd_cendula10} cedulas de R$: 10,00 reais!")
+    while total / 10 >= 1:
+        qtd_cedula10 += 1
+        total -= 10
 
-    print(f"Total de {qtd_cendula01} cedulas de R$: 1,00 reais!")
+    while total / 1 >= 1:
+        qtd_cedula01 += 1
+        total -= 1
 
+    print("=-"*20)
+    if qtd_cedula50 != 0:
+        print(f"Total de {qtd_cedula50} cedulas de R$: 50,00 reais!")
+    if qtd_cedula20 != 0:
+        print(f"Total de {qtd_cedula20} cedulas de R$: 20,00 reais!")
+    if qtd_cedula10 != 0:
+        print(f"Total de {qtd_cedula10} cedulas de R$: 10,00 reais!")
+    if qtd_cedula01 != 0:
+        print(f"Total de {qtd_cedula01} cedulas de R$: 1,00 reais!")
+    print("-="*20)
     break
 print("Tenha um bom dia!")
-
