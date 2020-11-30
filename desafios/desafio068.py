@@ -5,7 +5,9 @@ vitorias = 0
 
 while True:
 
-    jogador_escolha = str(input("[JOGADOR]: Voce escolhe PAR ou IMPAR [ P/I ]? ")).strip().upper()[0]
+    jogador_escolha = " "
+    while jogador_escolha not in "PI":
+        jogador_escolha = str(input("[JOGADOR]: Voce escolhe PAR ou IMPAR [ P/I ]? ")).strip().upper()[0]
     computador_numero = randint(0, 5)
     print("[COMPUTADOR]: Pensei em um numero...")
     jogador_numero = int(input("[JOGADOR]: Informe um numero ( 0 ate 5 ): "))
@@ -15,7 +17,7 @@ while True:
     else:
         computador_escolha = "P"
 
-    if jogador_numero <= 5 and jogador_numero >= 0:
+    if jogador_numero <= 10 and jogador_numero >= 0:
         print("PAR.. ")
         sleep(2)
         print("OU..")
