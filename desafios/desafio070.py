@@ -23,11 +23,6 @@ while continuar != "N":
         if preco < produto_mais_barato_preco:
             produto_mais_barato_nome = nome
 
-    print(produto_mais_barato_preco)
-    print(produto_mais_barato_nome)
-
-    print(preco)
-
     total += preco
 
     if preco > 1000:
