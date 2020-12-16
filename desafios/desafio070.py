@@ -35,7 +35,7 @@ while continuar != "N":
         nome = ""
         continuar = ""
 
-print("=-="*20)
+print(":=-=^40")
 print(f"O total gasto nas compras foi de R$: {total:.2f}!")
 print(f"Sao {tot_mais_1000} produtos que custam mais de R$: 1.000,00 reais!")
 print(f"O produto {produto_mais_barato_nome} e o mais BARATO que custa R$: {produto_mais_barato_preco}!")
