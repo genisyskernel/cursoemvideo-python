@@ -1,9 +1,9 @@
 qtd_cedula50 = qtd_cedula20 = qtd_cedula10 = qtd_cedula01 = total = 0
 
 while True:
-    print("_="*10)
-    print("{0:10}".format("BANCO CURSO EM VIDEO"))
-    print("_="*10)
+    print("="*30)
+    print("{:^30}".format("BANCO C.E.V"))
+    print("="*30)
 
     valor = int(input("Informe o valor para sacar R$? "))
 
