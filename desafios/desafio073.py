@@ -11,4 +11,4 @@ print(sorted(tabela_brasileirao))
 
 # D
 
-print(tabela_brasileirao.index("Chapecoense"))
+print(tabela_brasileirao.index("Chapecoense") + 1)
