@@ -2,7 +2,7 @@ palavras = ("Arroz", "Feijao", "Computador", "Moto", "Mouse", "Video", "Mesa", "
 
 for palavra in palavras:
     print(f"A palavra {palavra.upper()} tem as vogais: ", end="")
-    for letra in range(0, len(palavra)):
-        if palavra[letra].upper() in "AEIOU":
-            print(f"{palavra[letra].lower()}", end=" ")
+    for letra in palavra:
+        if letra.upper() in "AEIOU":
+            print(f"{letra.lower()}", end=" ")
     print()
